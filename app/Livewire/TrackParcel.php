@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Livewire;
+
+use Livewire\Component;
+use App\Models\Parcel;
+
+class TrackParcel extends Component
+{
+    public $trackingNumber;
+    public $parcel;
+
+    public function track()
+    {
+        $this->parcel = Parcel::where('tracking_number', $this->trackingNumber)->first();
+    }
+
+    public function render()
+    {
+        return view('livewire.track-parcel');
+    }
+}
