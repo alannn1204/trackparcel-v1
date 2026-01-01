@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Livewire\HomepageTrackParcel;
 
-Route::get('/', function () {
-    return redirect()->route('filament.admin.auth.login'); // pakai nama route yang betul
-});
+Route::get('/', HomepageTrackParcel::class);

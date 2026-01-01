@@ -18,14 +18,14 @@ class LatestParcels extends TableWidget
         return $table
             ->query(Parcel::query()->latest())
             ->columns([
-                TextColumn::make('tracking_number')
+                TextColumn::make('tracking_no')
                     ->label('Tracking No')
                     ->searchable(),
 
                 TextColumn::make('customer_name')
                     ->label('Customer'),
 
-                TextColumn::make('storage_slot')
+                TextColumn::make('storage_no')
                     ->label('No. Rack'),
 
                 TextColumn::make('status')

@@ -14,9 +14,9 @@ class ParcelsTable
     {
         return $table
             ->columns([
-                TextColumn::make('tracking_number')
+                TextColumn::make('tracking_no')
                     ->searchable(),
-                TextColumn::make('storage_slot')
+                TextColumn::make('storage_no')
                     ->searchable(),
                 TextColumn::make('customer_name')
                     ->searchable(),

@@ -15,9 +15,9 @@ class ParcelForm
     {
         return $schema
             ->components([
-                QrCodeInput::make('tracking_number')
+                QrCodeInput::make('tracking_no')
                     ->required(),
-                Select::make('storage_slot')
+                Select::make('storage_no')
                     ->options([
                         '1' => '1',
                         '2' => '2',
@@ -37,8 +37,8 @@ class ParcelForm
                 Select::make('status')
                     ->options([
                         'pending' => 'Pending / Processing',
-                        'ready' => 'Ready for Delivery',
-                        'delivered' => 'Delivered',
+                        'ready' => 'Ready for Pickup',
+                        'delivered' => 'Done Pickup',
                     ]),
                     
             ]);

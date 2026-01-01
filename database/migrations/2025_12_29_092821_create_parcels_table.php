@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('parcels', function (Blueprint $table) {
     $table->id();
-    $table->string('tracking_number')->unique();
+    $table->string('tracking_no')->unique();
     $table->string('customer_name');
-     $table->enum('storage_slot', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
+     $table->enum('storage_no', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
     $table->date('delivery_date')->nullable();
     $table->date('pickup_date')->nullable();
     $table->enum('status', ['pending', 'ready', 'delivered'])->default('pending');

@@ -12,7 +12,7 @@ class TrackParcel extends Component
 
     public function track()
     {
-        $this->parcel = Parcel::where('tracking_number', $this->trackingNumber)->first();
+        $this->parcel = Parcel::where('tracking_no', $this->trackingNumber)->first();
     }
 
     public function render()
