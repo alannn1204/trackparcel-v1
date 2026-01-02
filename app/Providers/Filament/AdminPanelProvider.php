@@ -44,15 +44,7 @@ class AdminPanelProvider extends PanelProvider
                 //FilamentInfoWidget::class,
             ])
             ->middleware([
-                EncryptCookies::class,
-                AddQueuedCookiesToResponse::class,
-                StartSession::class,
-                AuthenticateSession::class,
-                ShareErrorsFromSession::class,
-                VerifyCsrfToken::class,
-                SubstituteBindings::class,
-                DisableBladeIconComponents::class,
-                DispatchServingFilamentEvent::class,
+                'web', // paling minimum, wajib
             ])
             ->authMiddleware([
                 Authenticate::class,
