@@ -16,13 +16,13 @@
             type="text"
             wire:model.defer="trackingNumber"
             placeholder="e.g. MY123456789"
-            class="flex-1 rounded-xl border border-gray-300 px-4 py-4 text-lg
+            class="flex-1 rounded-sm border border-gray-300 px-4 py-4 text-lg
                    focus:outline-none focus:ring-2 focus:ring-black"
         />
 
         <button
             wire:click="search"
-            class="rounded-xl bg-black px-6 py-4 text-white font-semibold
+            class="rounded-sm bg-black px-6 py-4 text-white font-semibold
                    hover:bg-gray-800 transition">
             Track
         </button>
